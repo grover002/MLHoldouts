@@ -7,7 +7,13 @@ readme = "README.md"
 packages = [{include = "mlholdouts", from = "src"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.9,<3.12"
+py-ddspls = {git = "https://github.com/davips/py_ddspls"}
+matplotlib = "^3.7.1"
+seaborn = "^0.12.2"
+pywavelets = "^1.4.1"
+statsmodels = "^0.13.5"
+scikit-learn = "^1.2.2"
 
 
 [build-system]
