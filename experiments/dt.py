@@ -11,7 +11,7 @@ d = hdict.fromfile("all-except-VEP_N1.csv", fields=["df_"])
 # print(d.df.keys())
 df0: DataFrame = d.df_
 attributes = [
-    "ID",
+    # "ID",
     "Delta", "Theta", "HighAlpha", "Beta", "Gamma", "Number segments",
     "2Hz pre-post wavelet change", "5Hz pre-post wavelet change", "12Hz pre-post wavelet change", "20Hz pre-post wavelet change", "30Hz pre-post wavelet change",
     "idade_crianca_meses_t1", "idade_crianca_meses_t2",
@@ -52,4 +52,4 @@ for target in targets:
     model = model.fit(X, y)
     dot_data = export_graphviz(model, out_file=None, feature_names=attributes, class_names=y.unique(), filled=True)
     graph = graphviz.Source(dot_data, filename=target, format="png")
-    graph.render(view=True)
+    graph.render(view=False)
