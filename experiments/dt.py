@@ -50,6 +50,6 @@ for target in targets:
         max_leaf_nodes=20
     )
     model = model.fit(X, y)
-    dot_data = export_graphviz(model, out_file=None, feature_names=attributes, class_names=y.unique(), filled=True)
+    dot_data = export_graphviz(model, out_file=None, feature_names=attributes, class_names=sorted(y.unique()), filled=True)
     graph = graphviz.Source(dot_data, filename=target, format="png")
     graph.render(view=False)
