@@ -15,6 +15,7 @@ pywavelets = "^1.4.1"
 statsmodels = "^0.13.5"
 scikit-learn = "^1.2.2"
 hdict = {extras = ["all"], version = "^0.230211.1"}
+graphviz = "^0.20.1"
 
 
 [build-system]
