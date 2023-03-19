@@ -2,18 +2,19 @@
 name = "mlholdouts"
 version = "0.1.0"
 description = ""
-authors = ["davips <dpsabc@gmail.com>"]
+authors = ["Grover", "davips <dpsabc@gmail.com>"]
 readme = "README.md"
 packages = [{include = "mlholdouts", from = "src"}]
 
 [tool.poetry.dependencies]
-python = ">=3.9,<3.12"
+python = ">=3.10,<3.12"
 py-ddspls = {git = "https://github.com/davips/py_ddspls"}
 matplotlib = "^3.7.1"
 seaborn = "^0.12.2"
 pywavelets = "^1.4.1"
 statsmodels = "^0.13.5"
 scikit-learn = "^1.2.2"
+hdict = {extras = ["all"], version = "^0.230211.1"}
 
 
 [build-system]

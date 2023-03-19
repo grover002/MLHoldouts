@@ -546,6 +546,7 @@ def holdout_framework(X, Y, method="ddspls", n_hold=10, alpha=0.05, stability=Tr
     else:
         return None
 
+
 # method to vertically stack matrix B
 def vstack_matrix(A, B):
     R = None
